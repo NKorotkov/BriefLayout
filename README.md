@@ -20,13 +20,21 @@ myView.right => superview.right - 10
 myView.centerY => superview.centerY
 ```
 
-Looks much cleaner, right? There are frameworks that allow getting the same result with even less amount of code, probably a single line. But that was not the goal of **BriefLayout**
+Looks much cleaner, right? 
+Yes, there are frameworks that allow getting the same result with even less amount of code, probably a single line. But that was not the goal of **BriefLayout**. 
+The main goal was to make boilerplate autolayout code a litle less cumbersome and a little more readable without introducing new abstractions. 
 
 <a name="faq"></a>
 ## FAQ 
 
 **Q: What if I need to keep a reference to an arbitrary constraint instance to change it later?**  
 **A:** It's easy. The `=>` operator actually returns a newly created constraint, you just need to assign it.
+```swift
+let constraintRef = myView.left => superview.left + 10
+```
+
+**Q: Where's constraint activation? Do I have to do it myself?**  
+**A:** No, you don't! **BriefLayout** takes care of constraint activation under the hood.
 ```swift
 let constraintRef = myView.left => superview.left + 10
 ```
