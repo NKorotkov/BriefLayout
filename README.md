@@ -35,9 +35,7 @@ let constraintRef = myView.left => superview.left + 10
 
 **Q: Where's constraint activation? Do I have to do it myself?**  
 **A:** No, you don't! **BriefLayout** takes care of constraint activation under the hood.
-```swift
-let constraintRef = myView.left => superview.left + 10
-```
+
 
 ## License
 MIT License
