@@ -3,7 +3,9 @@
 **BriefLayout** is a very simple framework that leverages the power of Swift custom operators to ease the burden of writing autolayout code.
 It's just a syntax sugar, that makes trivial code more "brief".
 
-Let's look at example. Here's generic autolayout code:
+Let's look at example, shall we?
+
+Here's generic autolayout code:
 ```swift
 NSLayoutConstraint.activate([
   myView.leftAnchor.constraint(equalTo: superview.leftAnchor, constant: 10),
